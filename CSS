@@ -1,0 +1,132 @@
+body {
+  background-color: black; 
+  color:white; 
+}
+
+.sm-footer {
+  margin-top: 100px;
+	padding: 30px;
+  width: 100%;
+	background-color: red;
+	position: relative;
+	overflow: hidden;
+}
+
+.sm-button {
+  margin-left: 20px;
+	float: left;
+}
+
+.sm-button a {
+  text-align: center;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+}
+
+.sm-button a:hover {
+  color: red;
+	background-color: white;
+  border: 1px solid red;
+  text-decoration: none;
+}
+
+.sm-fish-hover-image {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sm-fish-hover:hover .sm-fish-hover-image {
+  opacity: 1;
+}
+
+.sm-colour--on {
+  background-color: blue;
+  color: white;
+}
+
+.sm-colour--on a {
+  color: white;
+}
+
+.sm-colour--on .sm-button a {
+  border-color: white;
+  color: white;
+}
+
+.sm-colour--on footer {
+	background-color: blue;
+}
+
+.sm-position--on .sm-credit-container {
+  width: 100%;
+}
+
+.sm-position--on .sm-title-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.sm-position--on .sm-title-col {
+  width: 50%;
+}
+
+.sm-position--on .sm-title-container h1 {
+  font-size: 10vw;
+	margin-bottom: 10vh;
+	margin-top: 0;
+}
+
+.sm-position--on .sm-title-col--top-pad {
+  margin-top: 30vh;
+}
+
+.sm-position--on .sm-para-container {
+  margin-top: 50vh;
+}
+
+/* MOVE SWITCH STYLING */
+@keyframes move-left-to-right {
+  0% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: 60vw;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.sm-move--on .sm-title-container .sm-left-to-right {
+  animation: move-left-to-right 5s ease infinite;
+}
+
+@keyframes move-right-to-left {
+  0% {
+    margin-left: 0;
+  }
+
+  50% {
+    margin-left: -30vw;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+.sm-move--on .sm-title-container .sm-right-to-left {
+  animation: move-right-to-left 5s ease infinite;
+}
